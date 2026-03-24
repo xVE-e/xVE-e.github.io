@@ -5,7 +5,7 @@ title: "Analyzing Akamai BMP 4.1.3 - Part 2: Native Library Deep Dive"
 
 # Analyzing Akamai BMP 4.1.3 - Part 2
 
-[PART 1](https://dev.to/xve-e/analyzing-akamai-bmp-413-part-1-for-noobs-learn-4pmm) | App showcase: Iberia 14.81.0 | IDA Pro: 9.3
+[PART 1](/2026/03/23/analyzing-akamai-bmp-part-1.html) | App showcase: Iberia 14.81.0 | IDA Pro: 9.3
 
 ## 1. Analyzing the post-decompress lib
 
