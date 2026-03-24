@@ -1,0 +1,17 @@
+title: Akamai BMP Analysis
+description: Reverse engineering articles and security research
+baseurl: ""
+url: "https://xve-e.github.io"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Author info
+author: xve-e
