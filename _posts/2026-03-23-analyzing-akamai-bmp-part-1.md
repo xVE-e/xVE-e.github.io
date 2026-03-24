@@ -212,4 +212,4 @@ This saga will have 3 parts. The first part is the simplest; we are just cleanin
 *Analysis done in 37 minutes*
 
 Telegram: @vxigl
-Discord: @vx7nyvek or @xve_e
+Discord: @xve_e
