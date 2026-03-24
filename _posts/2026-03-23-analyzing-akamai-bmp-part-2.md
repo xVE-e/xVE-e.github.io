@@ -390,3 +390,5 @@ When both `GA` and `IIT` accumulators hold fewer than 16 events **and** `EG.D.is
 ---
 
 *I'm going to rest here, wait for part 3.*
+Telegram: @vxigl
+Discord: @xve_e
