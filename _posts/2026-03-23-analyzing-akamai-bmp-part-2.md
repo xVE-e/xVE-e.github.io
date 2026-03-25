@@ -389,6 +389,24 @@ When both `GA` and `IIT` accumulators hold fewer than 16 events **and** `EG.D.is
 
 ---
 
+> **Last-minute update:** I wrote this article in a hurry due to lack of time, I ended up forgetting to provide something tangible and useful for you, here is the SensorData decryptor, make sure you are using **Frida 17.8.2** and the correct version of Iberia.
+
+**How to use:**
+
+1. Hook the app:
+```console
+frida -U -f com.iberia.android -l hook.js
+```
+2. After the app opens, trigger login or similar action
+3. Look for these log lines:
+```plaintext
+[AKM] SESSION_KEY_16: 59bf28fde390277c14dff6247116a39e    ← this is SESSION_KEY
+[AKM] HMAC_KEY_32:    a5ed42ba...f5af23fc                  ← this is HMAC_KEY
+```
+4. Paste the keys in `.py`, run, be happy
+
+---
+
 *I'm going to rest here, wait for part 3.*
 Telegram: @vxigl
 Discord: @xve_e
