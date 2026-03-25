@@ -405,11 +405,10 @@ frida -U -f com.iberia.android -l hook.js
 [AKM] SESSION_KEY_16: 59bf28fde390277c14dff6247116a39e    ← this is SESSION_KEY
 [AKM] HMAC_KEY_32:    a5ed42ba...f5af23fc                  ← this is HMAC_KEY
 ```
-4. Paste the keys in `.py`, run, be happy
+4. Paste the keys in `decrypt_sensor.py`, run, be happy
 
 ---
-https://github.com/xVE-e/akamaibmpstrings/blob/main/decrypt_sensor.py
-https://github.com/xVE-e/akamaibmpstrings/blob/main/hook.js
+[decrypt_sensor.py](https://github.com/xVE-e/akamaibmpstrings/blob/main/decrypt_sensor.py) | [hook.js](https://github.com/xVE-e/akamaibmpstrings/blob/main/hook.js)
 
 *I'm going to rest here, wait for part 3.*
 Telegram: @vxigl
