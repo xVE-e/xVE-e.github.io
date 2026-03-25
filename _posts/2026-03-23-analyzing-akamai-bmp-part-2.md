@@ -397,7 +397,7 @@ When both `GA` and `IIT` accumulators hold fewer than 16 events **and** `EG.D.is
 ```console
 frida -U -f com.iberia.android -l hook.js
 ```
-2. After the app opens, trigger login or similar action
+2. After the app opens, trigger login or smth
 3. Look for these log lines:
 ```plaintext
 [AKM] SESSION_KEY_16: 59bf28fde390277c14dff6247116a39e    ← this is SESSION_KEY
