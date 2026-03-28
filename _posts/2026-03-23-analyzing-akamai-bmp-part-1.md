@@ -127,7 +127,7 @@ sub_2CBF38 → returns a pointer to 0x2CDCC0 (.spd table)
 sub_2CBF44 → returns a pointer to 0x2CDCC8 (entry count)
 ```
 
-### 2.3. Script to get the decompressed libakamaibmp.so
+### 2.2. Script to get the decompressed libakamaibmp.so
 
 I used [Unicorn Engine](https://github.com/unicorn-engine/unicorn)
 
