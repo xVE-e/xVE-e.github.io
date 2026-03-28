@@ -9,8 +9,6 @@ title: "Analyzing Akamai BMP 4.1.3 - Part 3: Final Layer"
 
 In part 2 we reversed the native crypto pipeline — AES-128-CBC, HMAC-SHA256, RSA key exchange, MT19937. We know *how* the data is encrypted. Now going look at java layer.
 
-The native `buildN` receives 28 sensor pairs from Java. The data collection, encoding, and integrity computation happens on the Java side.
-
 ## 1. The Encoding Pipeline
 
 Sensor float arrays (accelerometer, gyroscope, magnetometer) go through a multi-stage compression pipeline before serialization:
@@ -300,7 +298,7 @@ A simple generator that produces valid sensor data, golang writed, fully cryptog
 ---
 
 
->Notes: I barely had time to test this, unfortunately I'm very busy working in paid projects, and at the same time I didn't want to leave you waiting a month for part 3. There might be something to improve if you're looking for a perfect solver. This is just an educational article, it serves as a guide. This doesn't mean that bmp413.go doesn't work, it just means that it's definitely not something I recommend putting into large scale. Thank you to the more than 300 readers, I love you all.
+>Notes: I barely had time to test this, unfortunately I'm very busy working on paid projects, and at the same time I didn't want to leave you waiting a month for part 3. There might be something to improve if you're looking for a perfect solver. This is just an educational article, it serves as a guide. This doesn't mean that bmp413.go doesn't work, it just means that it's definitely not something I recommend putting into large scale. Thank you to the more than 300 readers, I love you all.
 
 Telegram: @vxigl
 Discord: @xve_e
