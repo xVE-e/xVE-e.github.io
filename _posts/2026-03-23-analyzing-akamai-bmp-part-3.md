@@ -234,7 +234,7 @@ def build_table(constant, size=32767):
 
    **CPRSignal** = locally generated: ```System.currentTimeMillis() + "|" + SystemClock.uptimeMillis() + "|"```
 
-For testing i used a Frida script that captures the cprtoken for me; perhaps there are solvers for handler this, I have no idea.
+For testing i used a Frida script that captures the cprtoken for me; perhaps there are solvers for handle it, I have no idea.
 
 ```javascript
 'use strict';
@@ -298,7 +298,7 @@ A simple generator that produces valid sensor data, golang writed, fully cryptog
 ---
 
 
->Notes: I barely had time to test this, unfortunately I'm very busy working on paid projects, and at the same time I didn't want to leave you waiting a month for part 3. There might be something to improve if you're looking for a perfect solver. This is just an educational article, it serves as a guide. This doesn't mean that bmp413.go doesn't work, it just means that it's definitely not something I recommend putting into large scale. Thank you to the more than 300 readers, I love you all.
+>Notes: I barely had time to test this, i did some tests, but not many, unfortunately I'm very busy working on paid projects, and at the same time I didn't want to leave you waiting a month for part 3. There might be something to improve if you're looking for a perfect solver. This is just an educational article, it serves as a guide. This doesn't mean that bmp413.go doesn't work, it just means that it's definitely not something I recommend putting into large scale. Thank you to the more than 300 readers, I love you all.
 
 Telegram: @vxigl
 Discord: @xve_e
