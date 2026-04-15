@@ -245,9 +245,49 @@
         max-width: 100%;
       }
     }
+    /* Intro overlay */
+    .intro-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--bg-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .intro-overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .intro-overlay video {
+      max-width: 80vw;
+      max-height: 80vh;
+      background: transparent;
+    }
   </style>
 </head>
 <body>
+  <div class="intro-overlay" id="intro-overlay">
+    <video id="intro-video" autoplay muted playsinline>
+      <source src="{{ site.baseurl }}/assets/intro.webm" type="video/webm">
+    </video>
+  </div>
+  <script>
+    (function() {
+      var overlay = document.getElementById('intro-overlay');
+      var video = document.getElementById('intro-video');
+      function hide() { overlay.classList.add('hidden'); }
+      if (video) {
+        video.addEventListener('ended', hide);
+        video.addEventListener('error', hide);
+        setTimeout(hide, 8000);
+      } else {
+        hide();
+      }
+    })();
+  </script>
   <div class="container">
     <main class="content">
       {{ content }}
