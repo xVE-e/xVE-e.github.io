@@ -262,15 +262,69 @@
       visibility: hidden;
     }
     .intro-overlay video {
-      width: auto;
-      height: auto;
-      max-width: 60vw;
-      max-height: 60vh;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      object-fit: contain;
       background: transparent;
     }
+
+    /* Android block screen */
+    .android-block {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #000;
+      color: #e6edf3;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+    }
+    .android-block.active {
+      display: flex;
+    }
+    .android-block h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .android-block p {
+      font-size: 1rem;
+      color: #8b949e;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+    .android-block .icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      opacity: 0.6;
+    }
   </style>
+  <script>
+    // Block Android devices before page renders
+    if (/Android/i.test(navigator.userAgent)) {
+      document.documentElement.style.overflow = 'hidden';
+    }
+  </script>
 </head>
 <body>
+  <div class="android-block" id="android-block">
+    <div class="icon">🖥️</div>
+    <h1>Desktop only</h1>
+    <p>This article is best viewed on a computer. Please access it from a desktop browser to continue reading.</p>
+  </div>
+  <script>
+    (function() {
+      if (/Android/i.test(navigator.userAgent)) {
+        document.getElementById('android-block').classList.add('active');
+      }
+    })();
+  </script>
   <div class="intro-overlay" id="intro-overlay">
     <video id="intro-video" autoplay muted playsinline>
       <source src="{{ site.baseurl }}/assets/intro.mov" type='video/quicktime; codecs="hvc1"'>
