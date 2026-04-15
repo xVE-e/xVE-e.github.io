@@ -250,7 +250,7 @@
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: var(--bg-primary);
+      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -262,8 +262,10 @@
       visibility: hidden;
     }
     .intro-overlay video {
-      max-width: 80vw;
-      max-height: 80vh;
+      width: auto;
+      height: auto;
+      max-width: 60vw;
+      max-height: 60vh;
       background: transparent;
     }
   </style>
@@ -271,6 +273,7 @@
 <body>
   <div class="intro-overlay" id="intro-overlay">
     <video id="intro-video" autoplay muted playsinline>
+      <source src="{{ site.baseurl }}/assets/intro.mov" type='video/quicktime; codecs="hvc1"'>
       <source src="{{ site.baseurl }}/assets/intro.webm" type="video/webm">
     </video>
   </div>
