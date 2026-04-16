@@ -55,18 +55,20 @@
 
     /* Brand (left column) */
     .brand {
-      padding: 2rem 0;
+      padding: 1.5rem 0;
     }
     .brand a {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: 0.02em;
+      display: inline-block;
+      transition: opacity 0.2s ease;
     }
     .brand a:hover {
-      color: var(--accent);
+      opacity: 0.8;
+    }
+    .brand img {
+      width: 100%;
+      max-width: 110px;
+      height: auto;
+      display: block;
     }
 
     /* Main Content */
@@ -362,7 +364,7 @@
   </script>
   <div class="container">
     <aside class="brand">
-      <a href="{{ site.baseurl }}/">xVE</a>
+      <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/brand.png" alt="xVE-ex"></a>
     </aside>
 
     <main class="content">
