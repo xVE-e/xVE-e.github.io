@@ -42,7 +42,7 @@ to derive the key you need some calculated values ​​from the configuration D
 
 ![configg](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ktgz0rvvg3xtp3secj9k.png)
 
-ENDD, here's a sample video of my Frida script bypassing the Dexprotector RASP: https://youtu.be/nuUNjzY4LmQ
+ENDD, here's a sample video of my Frida script bypassing the Dexprotector RASP: [youtu.be/nuUNjzY4LmQ](https://youtu.be/nuUNjzY4LmQ)
 
 
 tg: @vxigl
