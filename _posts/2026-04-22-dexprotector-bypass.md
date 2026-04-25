@@ -3,7 +3,7 @@ layout: article
 title: "DexProtector Bypass"
 ---
 
-# DexProtector Bypass
+# DexProtector Bypass (SELLING) (NO OSS)
 
 ## anti deception warning
 
